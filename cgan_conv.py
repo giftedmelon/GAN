@@ -26,7 +26,7 @@ def concat(z,y):
 
 def conv_concat(x,y):
 	bz = tf.shape(x)[0]
-	print 'bz', bz
+	print('bz', bz)
 	y = tf.reshape(y, [bz, 1, 1, 10])
 	return tf.concat([x, y*tf.ones([bz, 28, 28, 10])], 3)  # bzx28x28x11
 
