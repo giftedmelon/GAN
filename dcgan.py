@@ -1,6 +1,6 @@
 from webbrowser import MacOSX
 import tensorflow as tf
-from tensorflow.examples.tutorials.mnist import input_data
+from tensorflow.keras.datasets import mnist
 import numpy as np
 import matplotlib as mpl
 mpl.use('Agg')
